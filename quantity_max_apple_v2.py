@@ -4,6 +4,14 @@ def getMoney():
 def getCostForApple ():
     cost_per_appleA= float(input("\n Price per apple: \n> "))
     return cost_per_appleA
+def computeForMaxQuantity ():
+    max_quantityA= int(money/cost_per_apple)
+    return max_quantityA
+def computeForChange():
+    changeA= money % cost_per_apple
+    return changeA
 
 money=getMoney()
 cost_per_apple= getCostForApple ()
+max_quantity= computeForMaxQuantity ()
+change= computeForChange ()
