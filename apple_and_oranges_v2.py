@@ -9,11 +9,16 @@ def getOrange ():
 def compute_for_total_cost():
     cost_per_apple= 20
     cost_per_orange= 25
-    total= cost_per_apple*quantity_apples + cost_per_orange*quantity_oranges
-    print(f"\nThe total amount is {total}. \n")
+    totalA= cost_per_apple*quantity_apples + cost_per_orange*quantity_oranges
+    return totalA
+
+def display(totalA):
+    print (f"\nThe total amount is {totalA}\n")
 
 quantity_apples= getApple()
 quantity_oranges= getOrange()
-compute_for_total_cost()
+total=compute_for_total_cost()
+
+display(total)
 
 
