@@ -13,11 +13,11 @@ def compute_for_total_cost():
     return totalA
 
 def display(totalA):
-    print (f"\nThe total amount is {totalA}\n")
+    print (f"\nThe total amount is {totalA:,.0f}.\n")
 
 quantity_apples= getApple()
 quantity_oranges= getOrange()
-total=compute_for_total_cost()
+total= compute_for_total_cost()
 
 display(total)
 
