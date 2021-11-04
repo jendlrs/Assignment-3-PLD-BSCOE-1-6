@@ -15,7 +15,7 @@ def computeForChange():
     return changeA
 
 def display(max_quantityA, changeA):
-    print(f"\nYou can buy {max_quantityA} apples and your change is {changeA:,.2f} pesos. \n")
+    print(f"\nYou can buy {max_quantityA:,} apples and your change is {changeA:,.2f} pesos. \n")
 
 money= getMoney()
 cost_per_apple= getCostForApple ()
